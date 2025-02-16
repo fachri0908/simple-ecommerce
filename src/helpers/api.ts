@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getQuery } from './url';
 
-const baseUrl = 'https://fakestoreapi.com/'
+const baseUrl = 'https://fakestoreapi.com/';
 
 export const getProductList = async () =>{
     const category = getQuery("category");
@@ -13,7 +13,7 @@ export const getProductList = async () =>{
 }
 
 export const getAllCategories = () =>{
-    return axios.get(`${baseUrl}products/categories`)
+    return axios.get(`${baseUrl}products/categories`);
 }
 
 export const getProductDetail =async (productId:number) =>{

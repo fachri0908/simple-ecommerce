@@ -73,4 +73,8 @@
   .filter-input {
     margin-bottom: 10px;
   }
+
+  .categories-dropdown {
+    top: 105px;
+  }
 }

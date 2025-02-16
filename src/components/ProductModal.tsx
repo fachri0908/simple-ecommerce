@@ -3,6 +3,7 @@ import { ProductModel } from "../models/product";
 import Modal from "./Modal";
 import { addToBasket, getCountInBasket } from "../helpers/basket";
 import './ProductModal.css';
+import LazyImage from "./LazyImage";
 
 interface ModalProps {
     isOpen: boolean;
@@ -25,7 +26,7 @@ const ProductModal: React.FC<ModalProps> = ({ isOpen, onClose, product }) => {
     return (
         <Modal isOpen={isOpen} onClose={onClose}>
             <div className="product-details">
-                <img src={product.image} alt={product.title} className="product-detail-image" />
+                <LazyImage src={product.image} alt={product.title} className="product-detail-image" />
                 <span className="product-rating">{product.rating.rate} ⭐ ({product.rating.count}) rating</span>
                 <h2 className="product-title">{product.title}</h2>
                 <span className="product-price">${product.price.toFixed(2)}</span>

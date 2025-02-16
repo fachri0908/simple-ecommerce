@@ -23,13 +23,13 @@ const Home = () => {
     }
 
     const fetchProducts = useCallback(() => {
-        setFetching(true)
+        setFetching(true);
         getProductList().then(res => {
             setProducts(sortProducts(res.data));
             setFetching(false);
         }).catch(() => {
-            alert('failed to fetch data')
-            setFetching(false)
+            alert('failed to fetch data');
+            setFetching(false);
         })
     }, []);
     
@@ -45,21 +45,21 @@ const Home = () => {
         if(sorting === 'price') {
             return items.sort((item, nextItem) => {
                 if(order === 'asc') {
-                    if(item.price < nextItem.price) return -1 
-                    return 1
+                    if(item.price < nextItem.price) return -1; 
+                    return 1;
                 } else {
-                    if(item.price > nextItem.price) return -1 
-                    return 1
+                    if(item.price > nextItem.price) return -1; 
+                    return 1;
                 }
             })
         } else {
             return items.sort((item, nextItem) => {
                 if(order === 'asc') {
-                    if(item.rating.rate < nextItem.rating.rate) return -1 
-                    return 1
+                    if(item.rating.rate < nextItem.rating.rate) return -1; 
+                    return 1;
                 } else {
-                    if(item.rating.rate > nextItem.rating.rate) return -1 
-                    return 1
+                    if(item.rating.rate > nextItem.rating.rate) return -1; 
+                    return 1;
                 }
             })
         }
