@@ -1,81 +1,80 @@
 .basket-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .basket-item-image {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    border-radius: 5px;
-  }
-  
-  .basket-item-info {
-    flex: 1;
-  }
-  
-  .basket-item-title {
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  
-  .basket-item-price {
-    font-size: 0.9rem;
-    color: #9f9f9f;
-  }
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
 
-  .basket-item-price-total {
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: #000000;
-  }
+.basket-item-image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 5px;
+}
 
-  .shopping-total {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #e60023;
-    justify-self: end;
-  }
-  
-  .basket-item-controls {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  .basket-btn {
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
-    background: #e60023;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .basket-btn:disabled {
-    background: #ccc;
-    cursor: not-allowed;
-  }
-  
-  .basket-count {
-    font-size: 1rem;
-    font-weight: bold;
-  }
+.basket-item-info {
+  flex: 1;
+}
 
-  .checkout-btn {
-    float: right;
-    background: #e60023;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
+.basket-item-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.basket-item-price {
+  font-size: 0.9rem;
+  color: #9f9f9f;
+}
+
+.basket-item-price-total {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.shopping-total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e60023;
+  justify-self: end;
+}
+
+.basket-item-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.basket-btn {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  background: #e60023;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.basket-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.basket-count {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.checkout-btn {
+  float: right;
+  background: #e60023;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}

@@ -1,64 +1,67 @@
 .product-details {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-  .product-detail-image {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-    border-radius: 8px;
-    align-self: center;
-  }
-  
-  .modal-description {
-    margin-top: 16px;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
+.product-detail-image {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  align-self: center;
+}
 
-  .add-to-basket {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
-    margin-top: 16px;
-  }
-  
-  .minus-btn, .plus-btn, .add-btn {
-    background: #e60023;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .minus-btn, .plus-btn {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .count {
-    width: 30px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .add-btn {
-    padding: 10px 20px;
-  }
-  
-  .basket-marker {
-    float: right;
-    margin-top: 10px;
-    font-size: 16px;
-    color: green;
-    font-weight: bold;
-  }
+.modal-description {
+  margin-top: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.add-to-basket {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.minus-btn,
+.plus-btn,
+.add-btn {
+  background: #e60023;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.minus-btn,
+.plus-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count {
+  width: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.add-btn {
+  padding: 10px 20px;
+}
+
+.basket-marker {
+  float: right;
+  margin-top: 10px;
+  font-size: 16px;
+  color: green;
+  font-weight: bold;
+}

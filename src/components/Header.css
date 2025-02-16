@@ -1,65 +1,76 @@
-
 .categories-dropdown {
-    background-color: #fff;
-    border: 1px solid #ededed;
-    border-radius: 4px;
-    position: absolute;
-    top: 10;
-    z-index: 20;
-    width: 257px;
-  }
-  
-  .category-item {
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .category-item:hover {
-    background-color: #ededed;
-  }
-  
-  .selected-category {
-    width: max-content;
-    margin-top: 10px;
-    border: 1px solid #ededed;
-    padding: 5px;
-  }
-  
-  .category-close-btn {
-    cursor: pointer;
-    margin-left: 5px;
-  }
-  
+  background-color: #fff;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  position: absolute;
+  top: 10;
+  z-index: 20;
+  width: 257px;
+}
+
+.category-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.category-item:hover {
+  background-color: #ededed;
+}
+
+.selected-category {
+  width: max-content;
+  margin-top: 10px;
+  border: 1px solid #ededed;
+  padding: 5px;
+}
+
+.category-close-btn {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filter-input {
+  height: 30px;
+  width: 250px;
+  padding-left: 5px;
+  border: 1px solid #c5c3c3;
+  border-radius: 4px;
+}
+
+.sorting-select {
+  width: 150px;
+  height: 30px;
+  border: 1px solid #c5c3c3;
+  border-radius: 4px;
+}
+
+.sorting-btn {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #c5c3c3;
+  border-radius: 4px;
+}
+
+.sorting-btn:hover {
+  background-color: #d7d6d6;
+}
+
+
+@media (max-width: 500px) {
   .filters {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: start;
   }
-  
+
   .filter-input {
-    height: 30px;
-    width: 250px;
-    padding-left: 5px;
-    border: 1px solid #c5c3c3;
-    border-radius: 4px;
+    margin-bottom: 10px;
   }
-  
-  .sorting-select {
-    width: 150px;
-    height: 30px;
-    border: 1px solid #c5c3c3;
-    border-radius: 4px;
-  }
-  
-  .sorting-btn {
-    margin-left: 10px;
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-    border: 1px solid #c5c3c3;
-    border-radius: 4px;
-  }
-  
-  .sorting-btn:hover {
-    background-color: #d7d6d6;
-  }
+}
